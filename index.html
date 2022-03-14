@@ -1,0 +1,878 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>车辆详情</title>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="static/css/21652c3c44364761b5808a65cf5adee2.css" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="static/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="static/css/animate.min.css" />
+    <link rel="stylesheet" href="static/css/all.min.css" />
+    <link rel="stylesheet" href="static/css/jarallax.css" />
+    <link rel="stylesheet" href="static/css/jquery.magnific-popup.css" />
+    <link rel="stylesheet" href="static/css/nouislider.min.css" />
+    <link rel="stylesheet" href="static/css/nouislider.pips.css" />
+    <link rel="stylesheet" href="static/css/odometer.min.css" />
+    <link rel="stylesheet" href="static/css/swiper.min.css" />
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="static/css/tiny-slider.min.css" />
+    <link rel="stylesheet" href="static/css/stylesheet.css" />
+    <link rel="stylesheet" href="static/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="static/css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="static/css/twentytwenty.css" />
+    <link rel="stylesheet" href="static/css/jquery.bxslider.css" />
+    <link rel="stylesheet" href="static/css/bootstrap-select.min.css" />
+    <link rel="stylesheet" href="static/css/vegas.min.css" />
+    <link rel="stylesheet" href="static/css/jquery-ui.css" />
+    <link rel="stylesheet" href="static/css/timepicker.css" />
+
+    <!-- template styles -->
+    <link rel="stylesheet" href="static/css/entox.css" />
+    <link rel="stylesheet" href="static/css/entox-responsive.css" />
+</head>
+
+<body>
+    <div class="preloader">
+        <img class="preloader__image" width="60" src="static/picture/loader.png" alt="" />
+    </div>
+    <!-- /.preloader -->
+    <div class="page-wrapper">
+        <header class="main-header main-header-listing-page clearfix">
+            <div class="main-header__top">
+                <div class="main-header__top-left">
+                    <p class="main-header__top-left-text">欢迎来到Dragon租车行！ <a href="#">现在登录</a></p>
+                </div>
+                <div class="main-header__top-right">
+                    <div class="main-header__top-right-social-box">
+                        <div class="main-header__top-right-social">
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="clr-fb"><i class="fab fa-facebook"></i></a>
+                            <a href="#" class="clr-dri"><i class="fab fa-dribbble"></i></a>
+                            <a href="#" class="clr-ins"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="main-header__top-right-contact-box">
+                        <ul class="list-unstyled main-header__top-right-contact">
+                            <li><a href="mailto:needhelp@company.com">dragon@company.com</a></li>
+                            <li><a href="tel:00-666-888-0000">8888 8888</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <nav class="main-menu clearfix">
+                <div class="main-menu-wrapper clearfix">
+                    <div class="main-menu-wrapper__left">
+                        <div class="main-menu-wrapper__logo">
+                            <a href="index.html"><img src="static/picture/logo-1.png" alt=""></a>
+                        </div>
+                        <div class="main-menu-wrapper__main-menu">
+                            <a href="#" class="mobile-nav__toggler"><i class="fa fa-bars"></i></a>
+                            <ul class="main-menu__list">
+                                <li class="dropdown">
+                                    <a href="index.html">主页</a>
+                                </li>
+                                <li class="dropdown current">
+                                    <a href="#">租车</a>
+                                    <ul>
+                                        <li><a href="listings.html">商城</a></li>
+                                        <li><a href="listings-details.html">全部车型</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#">新车试驾</a>
+                                </li>
+                                <li><a href="contact.html">联系我们</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="main-menu-wrapper__right">
+                        <div class="main-menu-wrapper__search-box-cart-box">
+                            <a href="#" class="main-menu-wrapper__search search-toggler icon-magnifying-glass"></a>
+                            <a href="#" class="main-menu-wrapper__cart icon-shopping-cart mini-cart__toggler"></a>
+                        </div>
+                        <div class="main-menu-wrapper__btn-box">
+                            <a href="#" class="thm-btn main-menu-wrapper__btn">这是干嘛的？</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div class="stricky-header stricked-menu main-menu">
+            <div class="sticky-header__content"></div>
+            <!-- /.sticky-header__content -->
+        </div>
+        <!-- /.stricky-header -->
+
+        <!--Listing Top Start-->
+        <section class="listing-details-top">
+            <div class="container">
+                <ul class="list-unstyled listing-details-top__menu">
+                    <li><a href="index.html">主页</a></li>
+                    <li><span>-</span></li>
+                    <li><a href="listings.html">商城</a></li>
+                    <li><span>-</span></li>
+                    <li class="active"><a href="listings-details.html">某某车</a></li>
+                </ul>
+            </div>
+        </section>
+        <!--Listing Top End-->
+
+        <!--Listing Details Start-->
+        <section class="listing-details">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-8 col-lg-7">
+                        <div class="listing-details__left">
+                            <div class="listing-details__gallery clearfix">
+                                <div class="listing-details__gallery-content-box">
+                                    <ul class="bxslider list-unstyled clearfix">
+                                        <li>
+                                            <div class="listing-details__gallery-sliding-img">
+                                                <img src="static/picture/listing-details-gallery-img-1.jpg" alt="">
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="listing-details__gallery-sliding-img">
+                                                <img src="static/picture/listing-details-gallery-img-1.jpg" alt="">
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="listing-details__gallery-sliding-img">
+                                                <img src="static/picture/listing-details-gallery-img-1.jpg" alt="">
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="listing-details__gallery-sliding-img">
+                                                <img src="static/picture/listing-details-gallery-img-1.jpg" alt="">
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="listing-details__gallery-sliding-img">
+                                                <img src="static/picture/listing-details-gallery-img-1.jpg" alt="">
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="slider-pager">
+                                    <ul class="listing-details__thumb-box list-unstyled">
+                                        <li>
+                                            <a class="active" data-slide-index="0" href="#">
+                                                <div class="listing-details__img-holder">
+                                                    <img src="static/picture/listing-details-tham-img-1.jpg" alt="">
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="active" data-slide-index="1" href="#">
+                                                <div class="listing-details__img-holder">
+                                                    <img src="static/picture/listing-details-tham-img-2.jpg" alt="">
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="active" data-slide-index="2" href="#">
+                                                <div class="listing-details__img-holder">
+                                                    <img src="static/picture/listing-details-tham-img-3.jpg" alt="">
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="active" data-slide-index="3" href="#">
+                                                <div class="listing-details__img-holder">
+                                                    <img src="static/picture/listing-details-tham-img-4.jpg" alt="">
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="listing-details__desc">
+                                <h2 class="listing-details__title">详情</h2>
+                                <p class="listing-details__text-1">这是描述</p>
+                                <p class="listing-details__text-2">这也是描述</p>
+                            </div>
+                            <div class="listing-details__features">
+                                <div class="row">
+                                    <div class="col-xl-4 col-lg-4 col-md-4">
+                                        <ul class="list-unstyled listing-details__features-list">
+                                            <li>
+                                                <div class="icon">
+                                                    <i class="fa fa-check"></i>
+                                                </div>
+                                                <div class="text">
+                                                    <p>空调</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="icon">
+                                                    <i class="fa fa-check"></i>
+                                                </div>
+                                                <div class="text">
+                                                    <p>真皮座椅</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="icon">
+                                                    <i class="fa fa-check"></i>
+                                                </div>
+                                                <div class="text">
+                                                    <p>立体环绕音响</p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-xl-4 col-lg-4 col-md-4">
+                                        <ul class="list-unstyled listing-details__features-list">
+                                            <li>
+                                                <div class="icon">
+                                                    <i class="fa fa-check"></i>
+                                                </div>
+                                                <div class="text">
+                                                    <p>XXX</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="icon">
+                                                    <i class="fa fa-check"></i>
+                                                </div>
+                                                <div class="text">
+                                                    <p>XXX</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="icon">
+                                                    <i class="fa fa-check"></i>
+                                                </div>
+                                                <div class="text">
+                                                    <p>XXX</p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-xl-4 col-lg-4 col-md-4">
+                                        <ul class="list-unstyled listing-details__features-list mar-b-0">
+                                            <li>
+                                                <div class="icon">
+                                                    <i class="fa fa-check"></i>
+                                                </div>
+                                                <div class="text">
+                                                    <p>XXX</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="icon">
+                                                    <i class="fa fa-check"></i>
+                                                </div>
+                                                <div class="text">
+                                                    <p>XXX</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="icon">
+                                                    <i class="fa fa-check"></i>
+                                                </div>
+                                                <div class="text">
+                                                    <p>XXX</p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="listing-details__location">
+                                <div class="listing-details__location-top">
+                                    <div class="listing-details__location-top-left">
+                                        <h2>租车地点</h2>
+                                    </div>
+                                    <div class="listing-details__location-top-right">
+                                        <p>重庆市南岸区崇文路1号</p>
+                                        <p>重庆市南岸区崇文路2号</p>
+                                        <p>重庆市南岸区崇文路3号</p>
+                                    </div>
+                                </div>
+                                <div class="listing-details__location-map">
+
+                                </div>
+                            </div>
+                            <div class="listing-details__start-booking">
+                                <h2 class="listing-details__start-booking-title">开始租车</h2>
+                                <div class="listing-details__start-booking-wrapper">
+                                    <div class="listing-details__start-booking-box tabs-box">
+                                        <ul class="tab-btns tab-buttons clearfix list-unstyled">
+                                            <li data-tab="#booking" class="tab-btn active-btn"><span>预订</span></li>
+                                        </ul>
+                                        <div class="tabs-content">
+                                            <div class="tab active-tab" id="booking">
+                                                <div class="listing-details__start-booking-content">
+                                                    <form class="listing-details__start-booking-form-box">
+                                                        <ul class="list-unstyled listing-details__start-booking-form clearfix">
+                                                            <li class="listing-details__start-booking-input">
+                                                                <select class="selectpicker" aria-label="Default select example">
+                                                                    <option selected>选择提车地点</option>
+                                                                    <option value="1">重庆市南岸区崇文路1号</option>
+                                                                    <option value="2">重庆市南岸区崇文路2号</option>
+                                                                    <option value="3">重庆市南岸区崇文路3号</option>
+                                                                </select>
+                                                            </li>
+                                                            <li class="listing-details__start-booking-input">
+                                                                <select class="selectpicker" aria-label="Default select example">
+                                                                    <option selected>选择还车地点</option>
+                                                                    <option value="1">重庆市南岸区崇文路1号</option>
+                                                                    <option value="2">重庆市南岸区崇文路2号</option>
+                                                                    <option value="3">重庆市南岸区崇文路3号</option>
+                                                                </select>
+                                                            </li>
+                                                            <li class="listing-details__start-booking-input">
+                                                                <select class="selectpicker" aria-label="Default select example">
+                                                                    <option selected>选择车型</option>
+                                                                    <option value="1">One</option>
+                                                                    <option value="2">Two</option>
+                                                                    <option value="3">Three</option>
+                                                                </select>
+                                                            </li>
+                                                            <li class="listing-details__start-booking-input">
+                                                                <input type="text" name="date" placeholder="选择日期" id="datepicker">
+                                                                <div class="listing-details__start-bookin-icon-box">
+                                                                    <i class="fa fa-calendar"></i>
+                                                                </div>
+                                                            </li>
+                                                            <li class="listing-details__start-booking-input">
+                                                                <input type="text" name="time" placeholder="选择时间">
+                                                                <div class="listing-details__start-bookin-icon-box">
+                                                                    <i class="far fa-clock"></i>
+                                                                </div>
+                                                            </li>
+                                                            <li class="listing-details__start-booking-input">
+                                                                <select class="selectpicker" aria-label="Default select example">
+                                                                    <option selected>选择配置</option>
+                                                                    <option value="1">One</option>
+                                                                    <option value="2">Two</option>
+                                                                    <option value="3">Three</option>
+                                                                </select>
+                                                            </li>
+                                                        </ul>
+                                                    </form>
+                                                    <div class="listing-details__dirver-baby-price-box">
+                                                        <div class="listing-details__dirver-baby-price-box-single clearfix">
+                                                            <div class="listing-details__dirver-baby-price-left">
+                                                                <input type="checkbox" name="driver" id="tag_3">
+                                                                <label for="tag_3"><span></span>专属司机</label>
+                                                            </div>
+                                                            <div class="listing-details__dirver-baby-price-right">
+                                                                <p>¥300.00 /天</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="listing-details__dirver-baby-price-box-single clearfix">
+                                                            <div class="listing-details__dirver-baby-price-left">
+                                                                <input type="checkbox" name="baby seat" id="tag_4">
+                                                                <label for="tag_4"><span></span>儿童座椅</label>
+                                                            </div>
+                                                            <div class="listing-details__dirver-baby-price-right">
+                                                                <p>¥50.00 /天</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="listing-details__start-booking-btn-box">
+                                                        <button type="submit" class="listing-details__start-booking-btn">立即预订</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="listing-details__tag">
+                                <h3 class="listing-details__tag-title">标签</h3>
+                                <div class="listing-details__tag-list">
+                                    <a href="#">豪华型</a>
+                                    <a href="#">真皮座椅</a>
+                                    <a href="#">重庆</a>
+                                </div>
+                            </div>
+                            <div class="listing-details__reviews-box">
+                                <h3 class="listing-details__reviews-title">2条评论</h3>
+                                <div class="listing-details__reviews-single">
+                                    <div class="listing-details__reviews-img">
+                                        <img src="static/picture/listing-details-review-img-1.png" alt="">
+                                    </div>
+                                    <div class="listing-details__reviews-content">
+                                        <div class="listing-details__reviews-content-top">
+                                            <div class="listing-details__reviews-content-top-title">
+                                                <h3>路人乙</h3>
+                                            </div>
+                                            <div class="listing-details__reviews-content-top-rating">
+                                                <ul class="list-unstyled listing-details__reviews-content-top-rating-box">
+                                                    <li><i class="fa fa-star"></i></li>
+                                                    <li><i class="fa fa-star"></i></li>
+                                                    <li><i class="fa fa-star"></i></li>
+                                                    <li><i class="fa fa-star"></i></li>
+                                                    <li><i class="fa fa-star"></i></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <p class="listing-details__reviews-content-text">非常好！
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="listing-details__reviews-single">
+                                    <div class="listing-details__reviews-img">
+                                        <img src="static/picture/listing-details-review-img-2.png" alt="">
+                                    </div>
+                                    <div class="listing-details__reviews-content">
+                                        <div class="listing-details__reviews-content-top">
+                                            <div class="listing-details__reviews-content-top-title">
+                                                <h3>路人甲</h3>
+                                            </div>
+                                            <div class="listing-details__reviews-content-top-rating">
+                                                <ul class="list-unstyled listing-details__reviews-content-top-rating-box">
+                                                    <li><i class="fa fa-star"></i></li>
+                                                    <li><i class="fa fa-star"></i></li>
+                                                    <li><i class="fa fa-star"></i></li>
+                                                    <li><i class="fa fa-star"></i></li>
+                                                    <li><i class="fa fa-star"></i></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <p class="listing-details__reviews-content-text">非常好！
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="listing-details__add-review">
+                                <h3 class="listing-details__add-review-title">发表评论</h3>
+                                <ul class="list-unstyled listing-details__add-review-rating">
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                </ul>
+                                <form action="assets/inc/sendemail.php" class="listing-details__add-review-form contact-form-validated" novalidate="novalidate">
+                                    <div class="row">
+                                        <div class="col-xl-6">
+                                            <div class="listing-details__add-review-input-box">
+                                                <input type="text" placeholder="姓名" name="name">
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <div class="listing-details__add-review-input-box">
+                                                <input type="email" placeholder="联系方式" name="email">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xl-12">
+                                            <div class="listing-details__add-review-input-box">
+                                                <textarea name="message" placeholder="写下您的评论吧~"></textarea>
+                                            </div>
+                                            <button type="submit" class="thm-btn listing-details__add-review-btn">提交评论</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-5">
+                        <div class="listing-details__right">
+                            <h3 class="listing-deails__right-title">某某车</h3>
+                            <ul class="list-unstyled listing-deails__right-rating">
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                            </ul>
+                            <div class="listing-details__right-price-box">
+                                <div class="listing-details__right-price-icon">
+                                    <span>¥1000</span>
+                                </div>
+                                <div class="listing-details__right-price-text">
+                                    <p>/天</p>
+                                </div>
+                            </div>
+                            <div class="listing-details__contact-info">
+                                <a href="#" class="listing-details__contact-info-phone">
+                                    <div class="icon">
+                                        <span class="icon-phone-call"></span>
+                                    </div>
+                                    <div class="text">
+                                        <h5 data-toggle-number="00 666 888 000" data-number="00 666 888 0...">178 1502 ...
+                                        </h5>
+                                        <p>显示完整联系方式</p>
+                                    </div>
+                                </a>
+                                <a href="https://star1128.github.io/HomePage/" class="listing-details__contact-info-message">
+                                    <div class="icon">
+                                        <span class="icon-mail"></span>
+                                    </div>
+                                    <div class="text">
+                                        <p>咨询</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="listing-details__share-report-favorite-btn">
+                                <a href="#"><i class="fas fa-share"></i>分享到</a>
+                                <a href="#"><i class="fas fa-star"></i>收藏</a>
+
+                            </div>
+                            <div class="listing-details__features-box">
+                                <div class="listing-details__features-box-single">
+                                    <div class="listing-details__features-box-left">
+                                        <p>厂商:</p>
+                                    </div>
+                                    <div class="listing-details__features-box-right">
+                                        <span>Land Rover</span>
+                                    </div>
+                                </div>
+                                <div class="listing-details__features-box-single">
+                                    <div class="listing-details__features-box-left">
+                                        <p>车型:</p>
+                                    </div>
+                                    <div class="listing-details__features-box-right">
+                                        <span>Evoupe</span>
+                                    </div>
+                                </div>
+                                <div class="listing-details__features-box-single">
+                                    <div class="listing-details__features-box-left">
+                                        <p>类别:</p>
+                                    </div>
+                                    <div class="listing-details__features-box-right">
+                                        <span>Sedan Car</span>
+                                    </div>
+                                </div>
+                                <div class="listing-details__features-box-single">
+                                    <div class="listing-details__features-box-left">
+                                        <p>驱动方式:</p>
+                                    </div>
+                                    <div class="listing-details__features-box-right">
+                                        <span>AWD/4WD</span>
+                                    </div>
+                                </div>
+                                <div class="listing-details__features-box-single">
+                                    <div class="listing-details__features-box-left">
+                                        <p>变速器:</p>
+                                    </div>
+                                    <div class="listing-details__features-box-right">
+                                        <span>Automatic</span>
+                                    </div>
+                                </div>
+
+                                <div class="listing-details__features-box-single">
+                                    <div class="listing-details__features-box-left">
+                                        <p>生产:</p>
+                                    </div>
+                                    <div class="listing-details__features-box-right">
+                                        <span>2020</span>
+                                    </div>
+                                </div>
+                                <div class="listing-details__features-box-single">
+                                    <div class="listing-details__features-box-left">
+                                        <p>能源类型:</p>
+                                    </div>
+                                    <div class="listing-details__features-box-right">
+                                        <span>Petrol</span>
+                                    </div>
+                                </div>
+                                <div class="listing-details__features-box-single">
+                                    <div class="listing-details__features-box-left">
+                                        <p>发动机排量:</p>
+                                    </div>
+                                    <div class="listing-details__features-box-right">
+                                        <span>4.0L</span>
+                                    </div>
+                                </div>
+
+                                <div class="listing-details__features-box-single">
+                                    <div class="listing-details__features-box-left">
+                                        <p>汽缸:</p>
+                                    </div>
+                                    <div class="listing-details__features-box-right">
+                                        <span>6</span>
+                                    </div>
+                                </div>
+                                <div class="listing-details__features-box-single">
+                                    <div class="listing-details__features-box-left">
+                                        <p>颜色:</p>
+                                    </div>
+                                    <div class="listing-details__features-box-right">
+                                        <span>Silver</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="listing-details__author">
+                                <div class="listing-details__author-img">
+                                    <img src="static/picture/listing-details-author-img.png" alt="">
+                                </div>
+                                <div class="listing-details__author-details">
+                                    <div class="listing-details__author-details-name">
+                                        <h3>地区经理</h3>
+                                    </div>
+                                    <div class="listing-details__author-details-rating-box">
+                                        <ul class="list-unstyled listing-details__author-details-rating">
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="listing-details__author-contact-box">
+                                    <ul class="list-unstyled listing-details__author-contact-list">
+                                        <li>
+                                            <div class="icon">
+                                                <i class="fas fa-phone-square-alt"></i>
+                                            </div>
+                                            <div class="text">
+                                                <p><a href="tel:00-666-888-0000">178 1234 5678</a></p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <i class="fas fa-envelope"></i>
+                                            </div>
+                                            <div class="text">
+                                                <p><a href="mailto:needhelp@company.com">somebody@company.com</a></p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="listing-details__author-social-list">
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                    <a href="#" class="clr-fb"><i class="fab fa-facebook"></i></a>
+                                    <a href="#" class="clr-dri"><i class="fab fa-dribbble"></i></a>
+                                    <a href="#" class="clr-ins"><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                            <div class="listing-details__ask-question">
+                                <a href="#" class="listing-details__ask-question-btn">咨询</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Listing Details End-->
+
+        <!--Similar Listings Start-->
+        <section class="similar-listings">
+            <div class="container">
+                <div class="section-title text-center">
+                    <span class="section-title__tagline">热租车型</span>
+                    <h2 class="section-title__title">猜你喜欢</h2>
+                </div>
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4">
+                        <!--Similar Listings Single-->
+                        <div class="similar-listings__single">
+                            <div class="similar-listings__img">
+                                <img src="static/picture/similar-listings-img-1.jpg" alt="">
+                                <div class="similar-listings__icon">
+                                    <i class="fas fa-heart"></i>
+                                </div>
+                            </div>
+                            <div class="similar-listings__content">
+                                <h5 class="similar-listings__sub-title">Sedan Car</h5>
+                                <h3 class="similar-listings__title">Land Rover Evoque Pure</h3>
+                                <p class="similar-listings__price"><span>$32 </span>/perday</p>
+                                <ul class="list-unstyled similar-listings__details">
+                                    <li><a href="#">2016 Petrol</a></li>
+                                    <li><a href="#">Air Condition</a></li>
+                                    <li><a href="#">Auto</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4">
+                        <!--Similar Listings Single-->
+                        <div class="similar-listings__single">
+                            <div class="similar-listings__img">
+                                <img src="static/picture/similar-listings-img-2.jpg" alt="">
+                                <div class="similar-listings__icon">
+                                    <i class="fas fa-heart"></i>
+                                </div>
+                            </div>
+                            <div class="similar-listings__content">
+                                <h5 class="similar-listings__sub-title">Sedan Car</h5>
+                                <h3 class="similar-listings__title">Land Rover Evoque Pure</h3>
+                                <p class="similar-listings__price"><span>$32 </span>/perday</p>
+                                <ul class="list-unstyled similar-listings__details">
+                                    <li><a href="#">2016 Petrol</a></li>
+                                    <li><a href="#">Air Condition</a></li>
+                                    <li><a href="#">Auto</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4">
+                        <!--Similar Listings Single-->
+                        <div class="similar-listings__single">
+                            <div class="similar-listings__img">
+                                <img src="static/picture/similar-listings-img-3.jpg" alt="">
+                                <div class="similar-listings__icon">
+                                    <i class="fas fa-heart"></i>
+                                </div>
+                            </div>
+                            <div class="similar-listings__content">
+                                <h5 class="similar-listings__sub-title">Sedan Car</h5>
+                                <h3 class="similar-listings__title">Land Rover Evoque Pure</h3>
+                                <p class="similar-listings__price"><span>$32 </span>/perday</p>
+                                <ul class="list-unstyled similar-listings__details">
+                                    <li><a href="#">2016 Petrol</a></li>
+                                    <li><a href="#">Air Condition</a></li>
+                                    <li><a href="#">Auto</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Similar Listings End-->
+
+
+        <!--Site Footer One Start-->
+        <footer class="site-footer">
+            <div class="site-footer-bg" style="background-image: url(static/images/site-footer-bg.jpg)">
+            </div>
+            <div class="container">
+                <div class="site-footer__top">
+                    <div class="row">
+                        <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="100ms">
+                            <div class="footer-widget__column footer-widget__about">
+                                <div class="footer-widget__about-logo">
+                                    <a href="index.html"><img src="static/picture/footer-logo.png" alt=""></a>
+                                </div>
+                                <p class="footer-widget__about-text">Lorem ipsum dolor sit ame consect etur pisicing elit sed do eiusmod tempor incididunt ut labore.</p>
+                                <a href="#" class="thm-btn footer-widget__about-btn">Submit Ad</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="site-footer-bottom">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="site-footer-bottom__inner">
+                                <div class="site-footer__social">
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                    <a href="#" class="clr-fb"><i class="fab fa-facebook"></i></a>
+                                    <a href="#" class="clr-ins"><i class="fab fa-instagram"></i></a>
+                                </div>
+                                <p class="site-footer-bottom__copy-right">龙氏车行集团&copy; 2022</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--Site Footer One End-->
+
+
+    </div>
+    <!-- /.page-wrapper -->
+
+
+    <div class="mobile-nav__wrapper">
+        <div class="mobile-nav__overlay mobile-nav__toggler"></div>
+        <!-- /.mobile-nav__overlay -->
+        <div class="mobile-nav__content">
+            <span class="mobile-nav__close mobile-nav__toggler"><i class="fa fa-times"></i></span>
+
+            <div class="logo-box">
+                <a href="index.html" aria-label="logo image"><img src="static/picture/logo-1.png" width="155" alt="" /></a>
+            </div>
+            <!-- /.logo-box -->
+            <div class="mobile-nav__container"></div>
+            <!-- /.mobile-nav__container -->
+
+            <ul class="mobile-nav__contact list-unstyled">
+                <li>
+                    <i class="fa fa-envelope"></i>
+                    <a href="mailto:needhelp@packageName__.com">needhelp@entox.com</a>
+                </li>
+                <li>
+                    <i class="fa fa-phone-alt"></i>
+                    <a href="tel:666-888-0000">666 888 0000</a>
+                </li>
+            </ul>
+            <!-- /.mobile-nav__contact -->
+            <div class="mobile-nav__top">
+                <div class="mobile-nav__social">
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-facebook-square"></a>
+                    <a href="#" class="fab fa-pinterest-p"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                </div>
+                <!-- /.mobile-nav__social -->
+            </div>
+            <!-- /.mobile-nav__top -->
+
+
+
+        </div>
+        <!-- /.mobile-nav__content -->
+    </div>
+    <!-- /.mobile-nav__wrapper -->
+
+    <div class="search-popup">
+        <div class="search-popup__overlay search-toggler"></div>
+        <!-- /.search-popup__overlay -->
+        <div class="search-popup__content">
+            <form action="#">
+                <label for="search" class="sr-only">search here</label>
+                <!-- /.sr-only -->
+                <input type="text" id="search" placeholder="Search Here..." />
+                <button type="submit" aria-label="search submit" class="thm-btn">
+                    <i class="icon-magnifying-glass"></i>
+                </button>
+            </form>
+        </div>
+        <!-- /.search-popup__content -->
+    </div>
+    <!-- /.search-popup -->
+
+    <a href="#" data-target="html" class="scroll-to-target scroll-to-top"><i class="fa fa-angle-up"></i></a>
+
+
+    <script src="static/js/jquery-3.5.1.min.js"></script>
+    <script src="static/js/jquery-migrate.min.js"></script>
+    <script src="static/js/bootstrap.bundle.min.js"></script>
+    <script src="static/js/jarallax.min.js"></script>
+    <script src="static/js/jquery.ajaxchimp.min.js"></script>
+    <script src="static/js/jquery.appear.min.js"></script>
+    <script src="static/js/jquery.circle-progress.min.js"></script>
+    <script src="static/js/jquery.magnific-popup.min.js"></script>
+    <script src="static/js/jquery.validate.min.js"></script>
+    <script src="static/js/nouislider.min.js"></script>
+    <script src="static/js/odometer.min.js"></script>
+    <script src="static/js/swiper.min.js"></script>
+    <script src="static/js/tiny-slider.min.js"></script>
+    <script src="static/js/wnumb.min.js"></script>
+    <script src="static/js/wow.js"></script>
+    <script src="static/js/isotope.js"></script>
+    <script src="static/js/countdown.min.js"></script>
+    <script src="static/js/owl.carousel.min.js"></script>
+    <script src="static/js/twentytwenty.js"></script>
+    <script src="static/js/jquery.event.move.js"></script>
+    <script src="static/js/jquery.bxslider.min.js"></script>
+    <script src="static/js/bootstrap-select.min.js"></script>
+    <script src="static/js/vegas.min.js"></script>
+    <script src="static/js/jquery-ui.js"></script>
+    <script src="static/js/timepicker.js"></script>
+
+
+    <script src="static/js/40eae4c4fc9149a497d2da62609c0ae5.js"></script>
+
+
+    <!-- template js -->
+    <script src="static/js/entox.js"></script>
+</body>
+
+</html>
